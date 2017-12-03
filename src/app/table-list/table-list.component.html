@@ -1,0 +1,104 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header" data-background-color="red">
+                        <h4 class="title">Entity Resolution</h4>
+                        <p class="category">Here is what we could do next</p>
+                    </div>
+                    <div class="card-content table-responsive">
+                        <table class="table" style="text-align: center">
+                            <!--<thead class="text-danger">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Country</th>
+                                    <th>City</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>-->
+
+                            <tbody>
+                            <div class="card card-stats" >
+                                <div class="card-header" data-background-color="green">
+                                    <i class="material-icons">perm_media</i>
+                                </div>
+                                <h3 style="margin-right: 10%">What We Did</h3>
+                                <h4>Using word embeddings based on tf-idf scores, we matched names by cosine similarity.</h4>
+                                <h3>What Should be Done</h3>
+                                <h4>Entity resolution using Wikipedia, to resolve similar entities.</h4>
+                            </div>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="card " style="margin-top: 0">
+                    <div class="card-content table-responsive">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <h3>Similar Titles</h3>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let test of resolution">
+                                    <td>{{test.r1}}</td>
+                                    <td>{{test.r2}}</td>
+                                    <td >
+                                        <i *ngIf="test.r3 == 1" class="fa fa-check" style="color: #52aa53"></i>
+                                        <i *ngIf="test.r3 == 0" class="fa fa-times" style="color: #e84639"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header" data-background-color="red">
+                        <h4 class="title">Online Cross Referencing</h4>
+                        <p class="category">Here is what we could do next</p>
+                    </div>
+                    <div class="card-content table-responsive">
+                        <table class="table" style="text-align: center">
+                            <!--<thead class="text-danger">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Country</th>
+                                    <th>City</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>-->
+
+                            <tbody>
+                            <div class="card card-stats" >
+                                <div class="card-header" data-background-color="green">
+                                    <i class="material-icons">pageview</i>
+                                </div>
+                                <h3 style="margin-right: 10%">What Should be Done</h3>
+                                <h4 style="padding-right: 4em; padding-left: 4em">Given enough time (and good internet access), we would have liked to search entities (eg company name) on Wikipedia. Extracting named entities
+                                    using NLP part-of-speech tagging, we could have seen how often blacklisted companies or brokers can be traced to eachother.
+                                </h4>
+                                <div>
+                                    <img style="width: 10em; height: auto" src="assets/img/Wikipedia.png">
+                                    <i style="font-size: 5em; padding: 0.5em" class="material-icons">compare_arrows</i>
+                                    <img style="width: 10em; height: auto" src="assets/img/database.png">
+                                </div>
+                            </div>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

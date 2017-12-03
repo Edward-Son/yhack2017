@@ -1,0 +1,442 @@
+<div class="main-content">
+
+    <div class="container-fluid">
+        <!-- <div class="row">
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card card-stats" >
+                     <div class="card-header" data-background-color="orange">
+                         <i class="material-icons">content_copy</i>
+                     </div>
+                     <div class="card-content">
+                         <p class="category">Data Scraped</p>
+                         <h3 class="title">2<small>GB</small></h3>
+                     </div>
+                     <div class="card-footer">
+                         <div class="stats">
+                             <i class="material-icons text-danger">warning</i> <a href="#pablo">Get More Space...</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card card-stats" >
+                     <div class="card-header" data-background-color="green">
+                         <i class="material-icons">store</i>
+                     </div>
+                     <div class="card-content">
+                         <p class="category">Involved in other businesses</p>
+                         <h3 class="title">57.6%</h3>
+                     </div>
+                     <div class="card-footer">
+                         <div class="stats">
+                             <i class="material-icons">date_range</i> Barred Individuals
+                         </div>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card card-stats" >
+                     <div class="card-header" data-background-color="red">
+                         <i class="material-icons">info_outline</i>
+                     </div>
+                     <div class="card-content">
+                         <p class="category">Possible Gangs</p>
+                         <h3 class="title">75</h3>
+                     </div>
+                     <div class="card-footer">
+                         <div class="stats">
+                             <i class="material-icons">local_offer</i> Tracked from Finra
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+             <div class="col-lg-3 col-md-6 col-sm-6">
+                 <div class="card card-stats" >
+                     <div class="card-header" data-background-color="blue">
+                         <i class="fa fa-gavel"></i>
+                     </div>
+                     <div class="card-content">
+                         <p class="category">Company Infractions </p>
+                         <h3 class="title">0.43</h3>
+                     </div>
+                     <div class="card-footer">
+                         <div class="stats">
+                             <i class="material-icons">update</i> average
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>-->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header" data-background-color="purple">
+                        <h4 class="title">The Villains</h4>
+                        <p class="category">Data Analysis</p>
+                    </div>
+
+                    <div class="card-content table-responsive">
+                        <table class="table" style="text-align: center">
+                            <!--<thead class="text-danger">
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Country</th>
+                                    <th>City</th>
+                                    <th>Salary</th>
+                                </tr>
+                            </thead>-->
+
+                            <tbody>
+                            <div class="card card-stats">
+                                <div class="card-header" data-background-color="purple">
+                                    <i class="fa fa-user-secret"></i>
+                                </div>
+                                <h3 style="margin-right: 10%">Barred Broker</h3>
+                                <h4>Officially exluded or banned individual from Finra.</h4>
+                                <h3 >'Bad' Company</h3>
+                                <h4>Companies having admitted to wrong doings 5 or more times in court</h4>
+                            </div>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-chart" data-background-color="green">
+                        <div class="ct-chart" id="otherBusiness"></div>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="title">Other Business</h4>
+                        <p class="category"><span class="text-success"> </span> Percentage of barred brokers involved in
+                            other business ventures vs percentage of all brokers involved in other business ventures.
+                        </p>
+                        <i class="fa fa-long-arrow-up" style="color: #52aa53;"></i> 4.1%
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> updated 4 minutes ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-chart" data-background-color="orange">
+                        <div class="ct-chart" id="testsTaken"></div>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="title">Tests Taken</h4>
+                        <p class="category">Average number of tests taken by barred brokers vs average number of tests
+                            taken by all brokers</p>
+                        <i class="fa fa-long-arrow-down" style="color: #e84639;"></i> 8.7%
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> campaign sent 2 days ago
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-chart" data-background-color="blue">
+                        <div class="ct-chart" id="badCompany"></div>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="title">Suspicious Companies</h4>
+                        <p class="category">Percentage 'bad' employers worked for by barred brokers vs percentage 'bad'
+                            employers worked for by all brokers</p>
+                        <i class="fa fa-long-arrow-up" style="color: #52aa53;"></i> 2.0%
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> campaign sent 2 days ago
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header card-chart" data-background-color="purple">
+                        <div class="ct-chart" id="badAvgCompany"></div>
+                    </div>
+                    <div class="card-content">
+                        <h4 class="title">Suspicious Company Average</h4>
+                        <p class="category">Percentage of 'bad' employers per broker</p>
+                        <i class="fa fa-long-arrow-up" style="color: #52aa53;"></i> 3.2%
+
+                    </div>
+                    <div class="card-footer">
+                        <div class="stats">
+                            <i class="material-icons">access_time</i> campaign sent 2 days ago
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header card-chart" data-background-color="red">
+                    <div class="ct-chart" id="completedTasksChart"></div>
+                </div>
+                <div class="card-content">
+                    <h4 class="title">Barred Hires</h4>
+                    <p class="category">Guilty confessions vs percentage of barred hires</p>
+                </div>
+                <div class="card-footer">
+                    <div class="stats">
+                        <i class="material-icons">access_time</i> campaign sent 2 days ago
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-plain">
+                <div class="card-header" data-background-color="green">
+                    <h4 class="title">Machine Learning</h4>
+                    <p class="category">Data prediction</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table" style="text-align: center">
+                        <!--<thead class="text-danger">
+                            <tr>
+                                <th>Name</th>
+                                <th>Country</th>
+                                <th>City</th>
+                                <th>Salary</th>
+                            </tr>
+                        </thead>-->
+
+                        <tbody>
+                        <div class="card card-stats">
+                            <div class="card-header" data-background-color="green">
+                                <i class="material-icons">face</i>
+                            </div>
+                            <h3 style="margin-right: 10%">Support Vector Machine</h3>
+                            <br>
+                            <h4 style="text-align: left; padding-left: 1em">With the following features:</h4>
+                            <ul style="list-style: none; text-align: left;">
+                                <li>Organization Location</li>
+                                <li>Organization Name</li>
+                                <li>Organization Branch Location the Individual Works At</li>
+                                <li>Number of Exams Taken</li>
+                                <li>Other Business Venture Involvement</li>
+                            </ul>
+                            <h4>We used a SVM to learn and predict villains for the other data sets, achieving a 97.3% accuracy.
+                                While good at first glance, there are many improvements to be done.
+                                In our data set, around 97% of the individuals were clean.
+                                So, it is possible that the SVM just learned the ratio of clean vs bad individuals and still perform quite well.
+                                The two major steps we would take to improve would be to get more data and to optimize our feature list.
+                            </h4>
+                        </div>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card card-nav-tabs">
+                <div class="card-header" data-background-color="green">
+                    <div class="nav-tabs-navigation">
+                        <div class="nav-tabs-wrapper">
+                            <!--<span class="nav-tabs-title">Predict villain:</span>-->
+                            <h4 class="title">Predict Individual with our SVM</h4>
+                            <ul class="nav nav-tabs" data-tabs="tabs">
+                                <!--<li class="active">-->
+                                    <!--<a href="#profile" data-toggle="tab">-->
+                                        <!--<i class="material-icons">person</i>-->
+                                        <!--Person-->
+                                        <!--<div class="ripple-container"></div>-->
+                                    <!--</a>-->
+                                <!--</li>-->
+                                <!--   <li class="">
+                                       <a href="#settings" data-toggle="tab">
+                                           <i class="material-icons">cloud</i>
+                                           Server
+                                       <div class="ripple-container"></div></a>
+                                   </li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="profile">
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td width="1%">
+                                        <div class="input">
+                                            <label>
+                                                <input type="form" name="optionsInput" placeholder="Suspect name" [(ngModel)]="suspect">
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td class="td-actions text-right">
+                                        <button type="button" rel="tooltip" title="Edit Task"
+                                                class="btn btn-primary btn-simple btn-xs" (click)="findSuspect()">
+                                            <i class="material-icons">checkmark</i>
+                                        </button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <i *ngIf="predict == 0" class="fa fa-check" style="color: #52aa53">
+                                    Clean
+                                    </i>
+                                    <i *ngIf="predict == 1" class="fa fa-times" style="color: #e84639">
+                                    Villain
+                                    </i>
+                                </tr>
+                                <!--<tr *ngFor="let test of resolution">-->
+                                    <!--<div *ngIf="test.show">-->
+                                        <!--<i *ngIf="test.r2 == 0" class="fa fa-check" style="color: #52aa53">-->
+                                            <!--Clean-->
+                                        <!--</i>-->
+                                        <!--<i *ngIf="test.r2 == 1" class="fa fa-times" style="color: #e84639">-->
+                                            <!--Villain-->
+                                        <!--</i>-->
+
+                                    <!--</div>-->
+                                <!--</tr>-->
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card ">
+                <div class="card-header" data-background-color="green">
+                    <h4 class="title">Find the Villains!</h4>
+                    <p class="category">Data as of December 2017</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <td>Broker</td>
+                            <td>Prediction</td>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr *ngFor="let test of resolution">
+                            <td>{{test.r1}}</td>
+                            <td>
+                                <div *ngIf="test.show">
+                                    <i *ngIf="test.r2 == 0" class="fa fa-check" style="color: #52aa53">
+                                    </i>
+                                    <i *ngIf="test.r2 == 1" class="fa fa-times" style="color: #e84639">
+                                    </i>
+
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+
+<!--        <div class="col-md-6" style="width: 100%;">
+            <div class="card">
+                <div class="card-header" data-background-color="blue">
+                    <h4 class="title">Entity Relationships</h4>
+                    <p class="category">Data as of December 2017</p>
+                </div>
+                <div class="card-content table-responsive">
+                    <table class="table table-hover">
+                        <div id="myDiagramDiv"
+                             style="width:100%; height:25em;"></div>
+                    </table>
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+
+    <!-- <div class="col-lg-6 col-md-12">
+         <div class="card" >
+             <div class="card-header" data-background-color="orange">
+                 <h4 class="title">Barred Brokers</h4>
+                 <p class="category">Data as of December 2017</p>
+             </div>
+             <div class="card-content table-responsive">
+                 <table class="table table-hover">
+                     <thead class="text-warning">
+                         <tr>
+                             <th>ID</th>
+                             <th>Name</th>
+                             <th>Company</th>
+                             <th>Country</th>
+                         </tr>
+                     </thead>
+                     <tbody>
+                         <tr *ngFor="let bad of temp2">
+                             <td>1</td>
+                             <td>{{bad}}</td>
+                             <td>Infra</td>
+                             <td>Curaçao</td>
+                         </tr>
+                        &lt;!&ndash; <tr>
+                             <td>2</td>
+                             <td>Minerva Hooper</td>
+                             <td>$23,789</td>
+                             <td>Curaçao</td>
+                         </tr>
+                         <tr>
+                             <td>3</td>
+                             <td>Sage Rodriguez</td>
+                             <td>$56,142</td>
+                             <td>Netherlands</td>
+                         </tr>
+                         <tr>
+                             <td>4</td>
+                             <td>Philip Chaney</td>
+                             <td>$38,735</td>
+                             <td>Korea, South</td>
+                         </tr>&ndash;&gt;
+                     </tbody>
+                 </table>
+             </div>
+         </div>
+
+     </div>-->
+</div>
